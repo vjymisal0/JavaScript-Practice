@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Siddhesh Shelar</title>
+</head>
+
+<body>
+    <h2>JavaScript date()</h2>
+    Current Date and Time: <span id="txt"></span>
+    <h2>JavaScript Math.sqrt()</h2>
+    Math.sqrt(x) returns the square root of x:
+    <p id="demo1"></p>
+    <h2>JavaScript Math.pow()</h2>
+    Math.pow(x,y) returns the value of x to the power of y:
+    <p id="demo2"></p>
+    <script>
+        var today = new Date();
+        document.getElementById('txt').innerHTML = today;
+
+        document.getElementById("demo1").innerHTML = Math.sqrt(64);
+        document.getElementById("demo2").innerHTML = Math.pow(8, 2);
+    </script>
+</body>
+
+</html>

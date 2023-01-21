@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+            { name: "Advait", marks: 80 },
+            { name: "Anay", marks: 77 },
+            { name: "Manyata", marks: 88 },
+            { name: "Saanvi", marks: 95 },
+            { name: "Saachi", marks: 68 }
+        ];
+
+        let totalMarks = 0;
+        for (let i = 0; i < students.length; i++) {
+            totalMarks += students[i].marks;
+        }
+
+        let average = totalMarks / students.length;
+        alert("Average marks: " + average);
+
+        let grade;
+        if (average < 60) {
+            grade = "F";
+        } else if (average < 70) {
+            grade = "D";
+        } else if (average < 80) {
+            grade = "C";
+        } else if (average < 90) {
+            grade = "B";
+        } else {
+            grade = "A";
+        }
+        alert("Grade: " + grade);
+
+    </script>
+</body>
+
+</html>

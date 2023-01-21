@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+    email: <input type="text" id="email">
+    <button onclick="validate()">Login</button>
+
+</body>
+<script>
+    function validate() {
+        let a = document.getElementById("email").value;
+
+        let check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-z])+$/;
+
+
+        if (check.test(a)) {
+            alert("its valid email");
+        }
+        else {
+            alert("it is invalid email");
+
+        }
+    }
+</script>
+
+</html>

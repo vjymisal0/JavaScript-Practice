@@ -1,0 +1,29 @@
+<html>
+<input type="text" id="tx1"><br>
+<input type="button" value="chkDigit" onclick="check()">
+<br>
+<input type="button" value="chkNonDigit" onclick="check1()">
+<script type="text/javascript">
+    function check() //function for Digit
+    {
+        var str = tx1.value;
+        var chkPtrn = /\d/;
+        if (chkPtrn.test(str)) {
+            alert("Entered value id a digit");
+        }
+        else {
+            alert("Entered value is non-digit");
+        }
+    }
+    function check1() //function for Non-digit
+    {
+        var str = tx1.value;
+        var chkPtrn = /\D/;
+        if (chkPtrn.test(str)) {
+            alert("Entered value is non-digit");
+        }
+        else {
+            alert("Entered value id a digit");
+        }
+    }
+</script>

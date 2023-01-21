@@ -1,0 +1,40 @@
+<html>
+
+<body id="bd">
+    <script>
+
+        function colorChange() {
+            let a = document.getElementById("colors").value;
+            switch (a) {
+                case '1': document.getElementById("bd").style.backgroundColor = "blue";
+                    break;
+                case '2': document.getElementById("bd").style.backgroundColor = "pink";
+                    break;
+                case '3': document.getElementById("bd").style.backgroundColor = "yellow";
+                    break;
+                case '4': document.getElementById("bd").style.backgroundColor = "green";
+                    break;
+                case '5': document.getElementById("bd").style.backgroundColor = "orange";
+                    break;
+            }
+            console.log(a);
+        }
+    </script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <form>
+        <select id="colors" onchange="colorChange()">
+            <option value="1">Blue</option>
+            <option value="2">Pink</option>
+            <option value="3">Yellow</option>
+            <option value="4">Green</option>
+            <option value="5">Orange</option>
+        </select>
+    </form>
+</body>
+
+</html>

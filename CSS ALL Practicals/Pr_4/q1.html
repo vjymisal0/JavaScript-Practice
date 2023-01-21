@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title> Siddhesh Shelar</title>
+  <script>
+    function evenodd() {
+      var ch = Number(prompt("Enter your choice", "Press 1 for even and 2 for odd"));
+      switch (ch) {
+        case 1:
+          document.write("Even numbers are :: <br/>");
+          for (var i = 1; i <= 50; i++) {
+            if (i % 2 == 0) {
+              document.write(i + "<br/>");
+            }
+          }
+          break;
+        case 2:
+          document.write("Odd numbers are :: <br/>");
+          for (var j = 1; j <= 50; j++) {
+            if (j % 2 != 0) {
+              document.write(j + "<br/>");
+            }
+          }
+          break;
+        default:
+          document.write("You selected wrong option...<br/>Reload the page again to view even or odd numbers..!!");
+      }
+    }
+  </script>
+</head>
+
+<body onload="evenodd()">
+
+</body>
+
+</html>

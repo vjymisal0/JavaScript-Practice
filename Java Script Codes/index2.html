@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script language="javascript" type="text/javascript">
+        //join() method
+        let num = new Array("One", "Two", "Three");
+        let s1 = num.join(',');
+        document.write("<h1>S1 => " + s1);
+        let s2 = num.join('-');
+        document.write("<h1>S2 => " + s2);
+        //concat() method
+        let items = new Array("Pen", "Pencil", "Eraser");
+        let s3;
+        s3 = "vijay" + items.concat();;
+        items = items.join('-');
+        document.write("<h1>items => " + items);
+        document.write("<h1>S3 => " + s3);
+        let lang = new Array("C Lang", "Java Lang", "Python Lang");
+        let s4 = items.concat(lang);
+        document.write("<h1>S4 => " + s4);
+        //slice() method
+        let a = new Array(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+        let s5 = a.slice(3, 8);
+        document.write("<h1>S5 => " + s5);
+    </script>
+</body>
+
+</html>

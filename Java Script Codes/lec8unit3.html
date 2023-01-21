@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script>
+        function display() {
+            // document.forms.vijay.tf2.value = "WELCOME " + document.forms.vijay.tf1.value;
+            let i = 0;
+            while (i < document.forms.vijay.length) {
+                if (document.forms.vijay.elements[i].checked == true) {
+                    alert("You have selected " + document.forms.vijay.elements[i].value);
+                }
+                i = i + 1;
+            }
+
+            /*if (document.forms.vijay.c1.checked == true) {
+                alert("You have selected C Language");
+            }
+            else if (document.forms.vijay.c2.checked == true) {
+                alert("You have selected C++ Language");
+            }
+            else if (document.forms.vijay.c3.checked == true) {
+                alert("You have selected Java Language");
+            }
+            else if (document.forms.vijay.c4.checked == true) {
+                alert("You have selected Java Lamguage");
+            }
+            else if (document.forms.vijay.c5.checked == true) {
+                alert("You have selected Python Language");
+            }
+            else if (document.forms.vijay.c6.checked == true) {
+                alert("You have selected Swift Language");
+            }*/
+
+        }
+    </script>
+
+<body>
+    <form name="vijay">
+        <!-- Enter First name: <input type="text" name="tf1" onchange="display()"><br><br>
+        Message: <input type="text" name="tf2"> -->
+        <input type="checkbox" name="c1" value="C Language">C Language<br>
+        <input type="checkbox" name="c2" value="C++ Language">C++ Language<br>
+        <input type="checkbox" name="c3" value="Java Language">Java Language<br>
+        <input type="checkbox" name="c4" value="Python Language">Python Language<br>
+        <input type="checkbox" name="c5" value="Javascript Language">Javascript Language<br>
+        <input type="checkbox" name="c6" value="Swift Language">Swift Language<br>
+        <input type="Button" value="Submit" onclick="display()">
+
+    </form>
+</body>
+</head>
+
+</html>

@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <img src="rgbmain.png" alt="cant load" width="700" height="500" id="sides">
+    <br><br><button onclick="next()">Next</button>
+    <button onclick="previous()">Previous</button>
+
+</body>
+<script>
+    function next() {
+        let img = document.getElementById("sides");
+        img.src = "rgb2.jpg";
+    }
+    function previous() {
+        let img = document.getElementById("sides");
+        img.src = "rgb1.jpg";
+    }
+</script>
+
+</html>

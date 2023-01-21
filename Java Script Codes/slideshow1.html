@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <img id="img1" src="a.jpg" width="500" height="500">
+        <br><br>
+        <input type="button" onclick="myFun()" value="Change Slide">
+
+    </body>
+    <script>
+        let a=new Array("b.jpg","c.png","d.jpg");
+        let banner=0;
+        function myFun(){
+            banner++;
+            if(banner>a.length-1)
+            {
+                banner=0;
+            }
+            document.getElementById("img1").src=a[banner];
+        }
+    </script>
+</html>

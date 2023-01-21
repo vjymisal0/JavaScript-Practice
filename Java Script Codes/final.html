@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <select id="mySelect">
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+    </select>
+    <button type="button" onclick="addAtEnding()">Add Item at Ending</button>
+    <button type="button" onclick="addAtBeginning()">Add Item at Beginning</button>
+    <button type="button" onclick="removeItemAtEnd()">Remove Item at End</button>
+    <button type="button" onclick="removeItemAtBeginning()">Remove Item at Beginning</button>
+</body>
+<script>
+    function addAtEnding() {
+        var select = document.getElementById("mySelect");
+        var option = document.createElement('option');
+        option.text = prompt("Enter name of element to add: ");
+        select.add(option);
+        alert(" Element added at the end of list");
+    }
+    function addAtBeginning() {
+        var select = document.getElementById("mySelect");
+        var option = document.createElement('option');
+        option.text = prompt("Enter name of element to add: ");
+        select.add(option, 0);
+        alert(" Element added at the beginning of list");
+    }
+    function removeItemAtEnd() {
+        var select = document.getElementById("mySelect");
+        var option = document.createElement('option');
+        option.text = " ";
+        select.remove(option);
+        alert(" Element removed from the end of list");
+    } function removeItemAtBeginning() {
+        var select = document.getElementById("mySelect");
+        var option = document.createElement('option');
+        option.text = " ";
+        select.remove(option, 0);
+        alert(" Element removed from the beginning of list");
+    }
+</script>
+
+</html>

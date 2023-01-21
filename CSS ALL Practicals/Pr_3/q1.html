@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Siddhesh Shelar</title>
+    <script language="JavaScript">
+        var fname = ["Adam", "Sam", "Ratan", "Kiran", "Isha"];
+        var sname = ["Tom", "Mital", "John"];
+        //Concat()
+        var name = fname.concat(sname);
+        document.write("concat() --> Names :: " + name + "<br><br>");
+        //First name array 
+        document.write("Original array on which the operation will be performed :: <br>" + fname + "<br><br>");
+        //indexOf()
+        var result = fname.indexOf("Sam");
+        document.write("indexOf() --> Index of Sam is :: " + result + "<br><br>");
+        //push()
+        fname.push("Lisa");
+        document.write("push() --> :: " + fname + "<br><br>");
+        //pop()
+        var a = fname.pop();
+        document.write("pop() --> :: " + fname + "<br><br>");
+        //shift()
+        fname.shift();
+        document.write("shift() --> :: " + fname + "<br><br>");
+        //unshift()
+        fname.unshift("Manish");
+        document.write("unshift() --> :: " + fname + "<br><br>");
+        //splice()
+        fname.splice(2, 0, "Zoe", "Jerry");
+        document.write("splice() --> :: " + fname + "<br><br>");
+        //slice()
+        var vname = fname.slice(1);
+        document.write("slice() --> :: " + vname + "<br><br>");
+        //reverse()
+        // fname.sort();
+        fname.reverse();
+        document.write("The reverse of the above used array is :: <br>" + fname + "<br><br>");
+    </script>
+</head>
+
+</html>

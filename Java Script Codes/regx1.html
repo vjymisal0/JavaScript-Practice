@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <input type="text" id="tx">
+        <input type="button" value="click" onclick="check()">
+    </body>
+    <script>
+    function check(){
+        let str1=tx.value;
+        let chkptrn=/[^xyz]/;
+        let checkRange=/[a-z]/;
+        if(chkptrn.test(str1)){
+            alert("string contains character other than x, y, z");
+        }
+        else
+        {
+            alert("string doesn't contain characters other than x, y, z");
+        }
+        if(checkRange.test(str1))
+        {
+            alert("String is in range of a-z");
+        }
+        else
+        {
+            alert("string isn't in range of a-z");
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <form action="">
+      <select name="" id="mySelect" onchange="myFunction()">
+        <option>C</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>JavaScript</option>
+      </select>
+    </form>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("mySelect");
+      let i = x.selectedIndex;
+      console.log(i);
+      alert(x.options[i].text);
+    }
+  </script>
+</html>

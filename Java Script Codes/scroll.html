@@ -1,0 +1,28 @@
+<html>
+<p>Click the button to scroll the document window horizontally and vertically.</p>
+<button class="b1" onclick="scrollWin()">Click me to scroll horizontally & vertically</button><br><br>
+<p>Click the button to scroll the document window by horizontally and vertically.</p>
+<button class="b1" onclick="scrollWin1()">Click me to scroll horizontally!</button><br><br>
+<script>function scrollWin() {
+        window.scrollTo(500, 700);
+    }
+    function scrollWin1() {
+        window.scrollBy(500, 200);
+    }
+
+</script>
+</body>
+<style>
+    body {
+        background-color: black;
+        color: aliceblue;
+        width: 5000px;
+        height: 5000px;
+    }
+
+    .b1 {
+        position: fixed;
+    }
+</style>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>Forms and Event handling 3rd unit</title>
+</head>
+
+<body>
+  <script>
+    function pass() {
+      alert("Form Submitted Successfully");
+    }
+    function clean() {
+      alert("Form reset successfully");
+    }
+  </script>
+
+  <form onsubmit="pass()" onreset="clean()">
+    <!-- Name:<input type="text" value="text" /><br /> -->
+    <!-- <input type="submit" value="submit" /> -->
+    <!-- <input type="Submit" name="b1" value="Send" /> -->
+    <!-- <input type="Reset" name="b2" value="Reset" /> -->
+    <!-- <input type="Button" name="b3" value="Click" /> -->
+    <!-- Enter Your Name: <input type="text" name="tf1" size="20" /> -->
+    <!-- <textarea name="tf1" cols="50" rows="10" wrap="hard"></textarea> -->
+    Name: <input type="text" value="text"><br>
+    <!-- <input type="submit" value="submit"> -->
+    <input type="reset" value="reset">
+    <script>
+      /* let n = prompt("Enter value of n ");
+       n = Number.parseInt(n);
+       let i = 0;
+       while (i < n) {
+         document.write(i);
+         i++;
+       }*/
+
+    </script>
+  </form>
+</body>
+
+</html>

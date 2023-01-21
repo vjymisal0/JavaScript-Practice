@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rotating Banner Ads</title>
+    <script>
+        var bannerIndex = 0;
+        var banners = [
+            {
+                image: "a.jpg",
+                url: "http://www.example1.com",
+                alt: "Banner 1"
+            },
+            {
+                image: "b.jpg",
+                url: "http://www.example2.com",
+                alt: "Banner 2"
+            },
+            {
+                image: "c.jpg",
+                url: "http://www.example3.com",
+                alt: "Banner 3"
+            }
+        ];
+        function rotateBanner() {
+            // Get the banner element
+            var banner = document.getElementById("banner");
+            // Update the banner source and link
+            banner.src = banners[bannerIndex].image;
+            banner.parentNode.href = banners[bannerIndex].url;
+            banner.alt = banners[bannerIndex].alt;
+            // Update the banner index
+            bannerIndex = (bannerIndex + 1) % banners.length;
+        }
+
+        // Start the rotation
+        setInterval(rotateBanner, 3000);
+    </script>
+</head>
+
+<body>
+    <a href="#">
+        <img id="banner" src="1.jpg" alt="Banner 1">
+    </a>

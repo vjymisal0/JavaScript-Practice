@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Image SlideShow</title>
+    <script>
+        var images = ["rgb1.jpg", "rgb2.jpg", "rgbmain.png", "rgb3.jpg", "rbg4.jpg"];
+        var count = 0;
+        function previousImage() {
+            if (count != 0)
+                count--;
+            console.log(count);
+            var id = document.getElementById("imageId");
+            id.src = images[count];
+
+        }
+        function nextImage() {
+            if (count != 4)
+                count++;
+            console.log(count);
+            var id = document.getElementById("imageId");
+            id.src = images[count];
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <img id="imageId" src="rgbmain.png" width="300" height="200" />
+        <br />
+        <hr>
+        <input type="button" value="< Prev Image" onclick="previousImage()" />
+        <input type="button" value="Next Image >" onclick="nextImage()" />
+    </center>
+</body>
+
+</html>

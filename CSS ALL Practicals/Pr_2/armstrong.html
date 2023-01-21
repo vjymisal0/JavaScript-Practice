@@ -1,0 +1,51 @@
+<html>
+    <script>
+    // // program to check an Armstrong number of n digits
+
+    // // take an input
+    // const number = prompt("Enter a positive integer");
+    // const numberOfDigits = number.length;
+    // let sum = 0;
+
+    // // create a temporary variable
+    // let temp = number;
+
+    // while (temp > 0) {
+    //   let remainder = temp % 10;
+
+    //   sum += remainder ** numberOfDigits;
+
+    //   // removing last digit from the number
+    //   temp = parseInt(temp / 10); // convert float into integer
+    // }
+
+    // if (sum == number) {
+    //   alert(`${number} is an Armstrong number`);
+    // } else {
+    //   alert(`${number} is not an Armstrong number.`);
+    // }
+    // program to find the factorial of a number
+
+    // take input from the user
+    const number = parseInt(prompt('Enter a positive integer: '));
+
+    // checking if number is negative
+    if (number < 0) {
+        alert('Error! Factorial for negative number does not exist.');
+    }
+
+    // if number is 0
+    else if (number === 0) {
+        alert(`The factorial of ${number} is 1.`);
+    }
+
+    // if number is positive
+    else {
+        let fact = 1;
+        for (i = 1; i <= number; i++) {
+            fact *= i;
+        }
+        alert(`The factorial of ${number} is ${fact}.`);
+    }
+</script>
+</html>

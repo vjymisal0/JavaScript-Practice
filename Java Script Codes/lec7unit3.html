@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>7th Lecture of Forms & Event Handling</title>
+    <script type="text/javascript" lang="javascript">
+        /* function display() {
+            if (document.forms.vijay.tf1.value == "") {
+                window.alert("Please enter your name~");
+             }
+            else {
+                window.alert("Welcome " + document.forms.vijay.tf1.value);
+            }
+        */
+        // function myinfo() {
+        // alert("Your name: " + document.forms.vijay.elements[0].value + " college name: " + document.forms.vijay.elements[1].value + " branch name: " + document.forms.vijay.elements[2].value);
+        // }
+        // function display1() {
+        // alert("Welcome " + document.getElementById(`tf1`).value);
+        // }
+        function display2() {
+            // document.write("Good mrning"+document.getElementById('t1'));
+            document.getElementById("t1").innerHTML = "good morning guys";
+        }
+    </script>
+</head>
+
+<body>
+    <form name="vijay">
+        <!-- Enter Your Name: <input type="text" name="tf1"> -->
+        <!-- <input type="button" name="b1" value="Submit" onclick="display()"> -->
+        <!-- Enter your name: <input type="text" name="tf1"><br><br> -->
+        <!-- Enter college name: <input type="text" name="tf2"><br><br> -->
+        <!-- Enter your branch: <input type="text" name="tf3"><br><br> -->
+        <!-- <input type="button" name="b1" value="Submit" onclick="myinfo()"> -->
+        <!-- best way getElementById() function for events to be handled! -->
+        <!-- Enter your name: <input type="text" id="tf1"><br> -->
+        <!-- <input type="button" value="Submit" name="b1" onclick="display1()"> -->
+        <h4 id="t1"> Vijay Misal</h4>
+        <input type="button" name="b1" value="Change Text" onclick="display2()">
+
+    </form>
+</body>
+
+</html>

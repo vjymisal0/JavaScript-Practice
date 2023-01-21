@@ -1,0 +1,29 @@
+<html>
+<select id="ThirdYear" name="ThirdYear" onchange="populate(this.id,'SecondYear')">
+    <option value="">
+    <option value="TY">Third Year</option>
+    <option value="SY">Second Year</option>
+</select>
+</hr>
+<select id="SecondYear" name="SecondYear">
+</select>
+</hr>
+<script language="javascript">
+    function populate(f1, f2) {
+        var f1 = document.getElementById(f1);
+        var f2 = document.getElementById(f2);
+        f2.innerHTML = "";
+        if (f1.value == "TY") {
+            var newOption = document.createElement("option");
+            newOption.innerHTML = "CSS";
+            f2.options.add(newOption);
+        }
+        if (f1.value == "SY") {
+            var newOption = document.createElement("option");
+            newOption.innerHTML = "DBMS";
+            f2.options.add(newOption);
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email ID Generator</title>
+    <script>
+        function disableTextboxes() {
+            // Get the textboxes
+            var name = document.getElementById("name");
+            var middleName = document.getElementById("middleName");
+            var surname = document.getElementById("surname");
+            // Get the labels
+            var nameLabel = document.getElementById("nameLabel");
+            var middleNameLabel = document.getElementById("middleNameLabel");
+            var surnameLabel = document.getElementById("surnameLabel");
+            // Disable the textboxes and change color to red
+            name.disabled = true;
+            name.style.color = "red";
+            middleName.disabled = true;
+            middleName.style.color = "red";
+            surname.disabled = true;
+            surname.style.color = "red";
+            // Change the labels color to red
+            nameLabel.style.color = "red";
+            middleNameLabel.style.color = "red";
+            surnameLabel.style.color = "red";
+            // Construct the email ID
+            var email = name.value.toLowerCase() + "." + surname.value.toLowerCase() + "@msbte.com";
+            // Display the email ID as a message
+            alert("Email ID: " + email);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Email ID Generator</h1>
+    <form>
+        <label id="nameLabel" for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label id="middleNameLabel" for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName"><br>
+        <label id="surnameLabel" for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"><br>
+        <input type="button" value="Submit" onclick="disableTextboxes()">
+    </form>
+</body>
+
+</html>

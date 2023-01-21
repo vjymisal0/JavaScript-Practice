@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>JS Fourth Unit</title>
+    <script>
+        function writeCookie() {
+            document.cookie = "Name: " + document.vijay.tf1.value + ";expires=Thu, 18 Dec 2022 12:00:00 GMT";
+            window.alert("Cookie written successfully");
+            window.prompt("enter number man");
+
+        }
+        function readCookie() {
+            let x;
+            x = document.cookie;
+            document.write(x);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="vijay" action="" style="font-family:Hack">
+        Enter Your Name: <input type="text" name="tf1">
+        <input type="button" name="b1" value="write cookie" onclick="writeCookie()">
+        <input type="button" name="b2" value="Read Cookie" onclick="readCookie()">
+    </form>
+</body>
+
+</html>

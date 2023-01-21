@@ -1,0 +1,25 @@
+<html>
+<head><p id="para">This is old Window contents</p></head><br>
+<input type="button" value="popup 1" onclick="showPopup1()" />
+<br>
+<input type="button" value="dpopup 2" onclick="showPopup2()" />
+<br>
+<input type="button" value="popup 3" onclick="showPopup3()" />
+<script>
+function showPopup1()
+{
+document.write("This is new content by first option");
+}
+function showPopup2()
+{
+document.getElementById("para").innerHTML="This is new content by second option";
+} function showPopup3()
+{
+var oNewWin = window.open("", "_blank", "height=150,width=300,top=10,left=10,resizable=yes,menubar=yes");
+oNewWin.document.open();
+oNewWin.document.write("<html><head><title>New Window</title></head>");
+oNewWin.document.write("<body>This is a new content by third option!   <body></html>");
+}
+</script>
+</body>
+</html>

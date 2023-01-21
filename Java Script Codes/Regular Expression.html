@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        function myRegExp() {
+            // let x1 = /[^\abc]/;//if the respective string after \ matches with the input then it returns false else true
+            // let x1 = /[a-z]/;
+
+            //^ this means that the string or chars next to this can be other than the input
+            // let str = document.getElementById("tf1").value;
+            // let result = x1.test(str);
+            // alert(result);
+            // document.getElementById("tf2").innerHTML = result;
+            let x1 = /\w/;
+            let str = document.getElementById("tf1").value;
+            let result = x1.test(str);
+            let tf2 = document.getElementById("tf2");
+            if (result) {
+                tf2.innerHTML = "matches an alphanumeric character!";
+            }
+            else {
+                tf2.innerHTML = "matches non-alphanumeric character!.";
+            }
+        }
+    </script>
+</head>
+Enter Name:
+<input type="text" id="tf1">
+<input type="button" value="check" onclick="myRegExp()">
+<label id="tf2"></label>
+
+</html>

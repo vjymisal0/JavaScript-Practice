@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <form>
+        <input type="text" id="tx1">
+        <input type="button" onclick="setCookie()" value="Set Cookie">
+        <input type="button" onclick="deleteCookie()" value="Delete Cookie">
+        <input type="button" onclick="getCookie()" value="Get Cookie">
+
+    </form>
+</body>
+<script>
+
+    function setCookie() {
+        let a = document.getElementById("tx1").value;
+        document.cookie = "Name= " + a;
+    }
+    function getCookie() {
+        alert("Cookie Value: " + document.cookie);
+    }
+    function deleteCookie() {
+        let a = document.getElementById("tx1").value;
+        document.cookie = "Name=" + a + ";expires=Wednesday, August 07, 2001 10:10AM";
+
+        alert("cookie deleted: " + document.cookie);
+    }
+</script>
+
+</html>

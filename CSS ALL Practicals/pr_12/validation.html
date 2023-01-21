@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+    Username: <input type="text" id="username">
+    password: <input type="text" id="password">
+    <button onclick="validate()">Login</button>
+</body>
+<script>
+
+    function validate() {
+        let a = document.getElementById("username").value;
+        let b = document.getElementById("password").value;
+        let check = /[x-z]/;
+        let user = check.test(a);
+        let check1 = /[a-c]/;
+        let pass = check1.test(b);
+        if (user && pass) {
+            alert("its correct username and password");
+        }
+        else {
+            alert("it is wrong username and password");
+
+        }
+    }
+</script>
+
+</html>

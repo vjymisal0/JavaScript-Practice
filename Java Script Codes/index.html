@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="file1.js"></script> -->
+    <!-- <script src="file2.js"></script>  -->
+    <!-- <script src="file3.js"></script> -->
+    <!-- <script src="file4.js"></script> -->
+    <script>
+      /*  var a, b, c;
+            a = 100;
+            b = 200;
+            c = a + b;
+            document.write("Addition of ", a + " and ", b + " is: ", c);
+          */
+      /*
+            var no = 4; // it is a global variable in javascript
+            function calc_square() {
+              var square; //it  is a local variabls in javscript
+              square = no * no;
+              document.write("square: ", square);
+            }
+            calc_square();
+          */
+      /*let a = 100,
+              b = 20;
+            let c;
+            c = a + b;
+            document.write("<br>Addition: ", c);
+            c = a - b;
+            document.write("<br>Subtraction: ", c);
+            c = a * b;
+            document.write("<br>Multiplication: ", c);
+            c = a / b;
+            document.write("<br>Division: ", c);
+            a++;
+            b++;
+            document.write("<br>Value of a and b after incrementation: ", a + " ", b);
+            a--;
+            b--;
+            document.write("<br>Value of a and b after decrementation: ", a + " ", b);
+          */
+      // comparison operators
+      /*let a = 10,
+              b = 20,
+              c;
+            c = a < b;
+            document.write(a + " is less than ", b + " : ", c);
+            c = a === b;
+            document.write("<br>", a + " is identical to ", b + " : ", c);
+            c = a == b;
+            document.write("<br>", a + " is equal to ", b + " : ", c);
+            c = a > b;
+            document.write("<br>", a + " is greater than ", b + " : ", c);
+            c = a != b;
+            document.write("<br>", a + " is not equal to ", b + " : ", c);
+            c = a >= b;
+            document.write("<br>", a + " is greater than or equal to ", b + " : ", c);
+            c = a <= b;
+            document.write("<br>", a + " is less than equal to ", b + " : ", c);
+         */
+      // bitwise operators
+      /*  document.write((10 == 20) & (5 == 5));
+            document.write("<br>", (10 == 10) & (5 == 5));
+            document.write("<br>", (10 == 20) | (5 == 5));
+            document.write("<br>", (10 == 20) ^ (20 == 33));
+            document.write("<br>", ~10);
+            document.write("<br>", 10 << 2);
+            document.write("<br>", 10 >> 2);
+            document.write("<br>", 10 >>> 2);*/
+      // assignment operators
+      /*
+            let a = 10;
+            document.write(a);
+            document.write("<br>", (a += 10));
+            document.write("<br>", (a -= 10));
+            document.write("<br>", (a *= 5));
+            document.write("<br>", (a /= 10));
+            document.write("<br>", (a %= 5));
+       */
+      //ternary or conditional operators in javascript
+      /*let a = 10,
+              b = 20,
+              c;
+            document.write(a < b ? "Yeah" : "no");
+          */
+      //if if-else nested i
+      /*
+            let marks = 59;
+            if (marks > 75) {
+              document.write("You got distinction");
+            } else if (marks >= 50) {
+              document.write("You got second calss");
+            } else if (marks >= 35) {
+              document.write("you are just passed man");
+            } else if (marks <= 34) {
+              document.write("You are failed hurraayhhh");
+            }
+      */
+      /*
+            let a = 10,
+              b = 20,
+              c = 40;
+            if (a > b) {
+              if (a > c) {
+                document.write(a + " is the greatest number");
+              } else {
+                document.write(c + " is the greatest number");
+              }
+            } else {
+              if (b > c) {
+                document.write(b + " is the greatest number");
+              } else {
+                document.write(c + " is the greatest number");
+              }
+            }
+            */
+      //switch case statement
+      /*
+            let a=1;
+            switch (a) {
+              case 1:
+                document.write("you are first");
+                break;
+              case 2:
+                document.write("You are second");
+                break;
+              case 3:
+                document.write("You are third");
+                break;
+              default: document.write("You have entered more than 3");
+              break;
+            }
+            */
+      //for loop in javascript
+      /*
+          let a;
+          for(a=0;a<=10;a++)
+          {
+            document.write(a+"<br>");
+          }*/
+      //forin loop
+      /*
+            let x;
+            for (x in navigator) {
+              document.write(x, "<br>");
+            }
+            */
+      /*
+            const person = { fname: "John", lname: "Doe", age: 25 };
+            let text = "";
+            for (let x in person) {
+              document.write("<br>", x);
+            }*/
+      //object in javascript
+      /*
+            var s1 = {
+              rollno: 1010,
+              name: "Vijay",
+              marks: 89,
+            };
+            document.write("Roll No: ", s1.rollno);
+            document.write("<br>Name: ", s1.name);
+            document.write("<br>Marks: ", s1.marks);
+          */
+      /* var s1 = {
+              rollno: 1010,
+              fname: "Vijay",
+              lname: "misal",
+              marks: 88,
+              fullname: function () {
+                return this.fname + " " + this.lname;
+              },
+            };
+            document.write("Roll No: " + s1.rollno);
+            document.write("<br>Full Name: " + s1.fullname());
+            document.write("<br>Marks: " + s1.marks);
+          */
+      /*
+            function Book() {
+              this.bookid = 1010;
+              this.name = "JS";
+              this.price = 98.88;
+            }
+            var b1 = new Book();
+            document.write("Book ID: ", b1.bookid);
+            document.write("<br>Book Name: ", b1["name"]); //querying in javascript
+            document.write("<br>Book Price: ", b1["price"]); //this is known as querying
+        */
+      //Date method object in javascript
+      /*
+        let d = new Date();
+      document.write("Date: ", d.getDate());
+      document.write(" : ", d.getDay(), " : ", d.getFullYear());
+      document.write(
+        "<br>Time: ",
+        " : ",
+        d.getMilliseconds(),
+        " : ",
+        d.getSeconds(),
+        " : ",
+        d.getMinutes()
+      );
+      */
+      //javascript ia dynamic, lightweight, interpreter based and case sensitive clientside scripting language
+      // document.write("hello");
+      //while loop in javascript
+      /*var a=0;
+        while(a<=10)
+        {
+          document.write(a+"<br>");
+          a++;
+        }
+        */
+
+      /*document.write(
+        "//this is used to make comment in javascript as in java for a single line<br> /* and this is used to <br> make multiple statements comment */
+      /* ); */
+
+      /*
+        Limitations of Javascript: 
+        1. Client Side Security
+        2. Can't be used for Networking applications
+        3. Can't read or write into file
+        4. Doesn't support multithreading
+*/
+      // document.write("asd");
+      /*
+      runtime notes from arrow
+        document: when the html page is loaded, it is document object
+        write: method to display tests on the webpage
+      */
+      //script tag attributes: language and type these are two attributes of script tag
+    
+    </script>
+  </body>
+</html>

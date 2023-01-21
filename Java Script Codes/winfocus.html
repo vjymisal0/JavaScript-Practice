@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <P><input type="button" value="Click Me" onclick="showPopup()" />
+        <script type="text/javascript">
+            function showPopup() {
+                var oNewWin = window.open("https:///www.google.com", "_blank",
+                    "height=300,width=500,top=100,left=100,resizable=yes,menubar=yes");
+                oNewWin.focus();
+            }
+        </script>
+</body>
+<style>
+    body {
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+
+</html>

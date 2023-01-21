@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    Enter Your Email: <input type="text" id="email">
+    Enter Phone No: <input type="text" id="phno">
+    <button id="submit" onclick="checkRegx()">Check</button>
+</body>
+<script>inputEmail = document.getElementById("email");
+    inputPhoneNo = document.getElementById("phno");
+    let emailCheck = /^[a-z0-9]+[a-z0-9]+@[a-z0-9]+[.]+[a-z0-9-]+$/;
+    function checkRegx() {
+        if (inputEmail.value.match(emailCheck)) {
+            alert(inputEmail.value + " is a valid email address");
+        }
+        else {
+            alert(inputEmail.value + " is an invalid email address");
+        }
+
+    }
+</script>
+
+</html>

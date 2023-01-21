@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //     Q1(c) Write Java script to create person object with properties firstname, lastname, age, eye color, delete eye color property and display remaining properties of person object.
+    // var person = {
+    //     firstname: "vijay",
+    //     lastname: "misal",
+    //     age: 18,
+    //     eyecolor: "black"
+
+    // };
+    // // delete person.eyecolor;
+    // document.write(person.firstname);
+    // document.write("<br>" + person.lastname);
+    // document.write("<br>" + person.age);
+    // document.write("<br>" + person.eyecolor);
+
+    //Q1(d) Write a Java script that initializes an array called flowers with the names of 3 flowers. The script then displays array elements.
+    // let a = new Array("rose", "jasmine", "lotus");
+    // document.write(a[0] + " " + a[1] + " " + a[2]);
+
+    //Q2(a) Explain getter and setter properties in Java script with suitable example. 
+    // var myCar = {
+    //     /* Data properties */
+    //     defColor: "blue",
+    //     defMake: "Toyota",
+    //     defBest: "Fortuner",
+    //     /* Accessor properties (getters) */
+    //     get color() {
+    //         return this.defColor;
+    //     },
+    //     get make() {
+    //         return this.defMake;
+    //     },
+    //     get best() {
+    //         return this.defBest;
+    //     },
+    //     /* Accessor properties (setters) */
+    //     set color(newColor) {
+    //         this.defColor = newColor;
+    //     },
+    //     set make(newMake) {
+    //         this.defMake = newMake;
+    //     },
+    //     set best(newBest) {
+    //         this.defBest = newBest;
+    //     }
+    // };
+    // document.write("Car color:" + myCar.color + " Car Make: " + myCar.make + " Best Car: " + myCar.best);
+    // /* Calling the setter accessor properties */
+    // myCar.color = "red";
+    // myCar.make = "Audi";
+    // myCar.best = "Thar";
+    // /* Checking the new values with the getter accessor properties */
+    // document.write("<p>Car color:" + myCar.color); // red
+    // document.write(" Car Make: " + myCar.make); //Audi
+    // document.write(" Best Car: " + myCar.best);  //Best
+
+    // window.prompt("Enter Age", "55");
+    //Q2 (c) Write a Java script program which computes, the average marks of the following students then, this average is used to determine the corresponding grade.
+    var students = [['Summit', 80], ['Kalpesh', 77], ['Amit', 88], ['Tejas', 93],
+    ['Abhishek', 65]];
+    var Avgmarks = 0;
+    for (var i = 0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+    }
+    var avg = (Avgmarks / students.length);
+    document.write("Average grade: " + (Avgmarks) / students.length);
+    
+    document.write("<br>");
+    if (avg < 60) {
+        document.write("Grade : E");
+    }
+    else if (avg < 70) {
+        document.write("Grade : D");
+    }
+    else if (avg < 80) {
+        document.write("Grade : C");
+    } else if (avg < 90) {
+        document.write("Grade : B");
+    } else if (avg < 100) {
+        document.write("Grade : A");
+    }
+
+
+</script>
+
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        font-family: Mukta Vaani;
+    }
+</style>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Siddhesh Shelar</title>
+    <script>
+        function manage(txt) {
+            var but = document.getElementById('btt');
+            if (txt.value != '') {
+                but.disabled = false;
+            }
+            else {
+                but.disabled = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txt" onkeyup="manage(this)">
+    <input type="submit" id="btt" disabled>
+</body>
+
+</html>

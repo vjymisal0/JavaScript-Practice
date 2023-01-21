@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <script>
+        // var a = [[11, 22, 33], [44, 55, 66], [77, 88, 99]];
+        // document.write(a[0][0] + "<br>" + a[0][1] + "<br>" + a[0][2] + "<br>");
+        // document.write(a[1][0] + "<br>" + a[1][1] + "<br>" + a[1][2] + "<br>");
+        // document.write(a[2][0] + "<br>" + a[2][1] + "<br>" + a[2][2] + "<br>");
+        // program to check if the string is palindrome or not
+
+        function checkPalindrome(string) {
+
+            // find the length of a string
+            const len = string.length;
+
+            // loop through half of the string
+            for (let i = 0; i < len / 2; i++) {
+
+                // check if first and last string are same
+                if (string[i] !== string[len - 1 - i]) {
+                    return 'It is not a palindrome';
+                }
+            }
+            return 'It is a palindrome';
+        }
+
+        // take input
+        const string = prompt('Enter a string: ');
+
+        // call the function
+        const value = checkPalindrome(string);
+
+        console.log(value);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script>
+        /*
+        function display() {
+            // if (document.forms.vijay.value.length > 0 && document.forms.vijay.tf2.value.length > 0) {
+                document.forms.vijay.tf3.value = document.forms.vijay.tf1.value+document.forms.vijay.tf2.value;
+                alert(document.forms.vijay.tf3.value)
+            // }
+        }*/
+        // function enable() {
+        //     document.forms.vijay.tf1.disabled = false;
+        // }
+        // function disable() {
+        //     document.forms.vijay.tf1.disabled = true;
+        // }
+        function readonly() {
+            document.forms.vijay.tf1.readOnly = true;
+
+        }
+        function write1() {
+            document.forms.vijay.tf1.readOnly = false;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="vijay">
+        <!-- Enter Year: <input type="text" name="tf1"><br> -->
+        <!-- Enter Branch: <input type="text" name="tf2"><br> -->
+        <!-- Course Code: <input type="hidden" name="tf3"><br> -->
+        <!-- <input type="button" name="b1" value="submit" onclick="display()"> -->
+        <!-- Enter ur name: <input type="text" name="tf1"><br><br>
+        <input type="button" name="b1" value="Disable" onclick="disable()">
+        <input type="button" name="b2" value="Enable" onclick="enable()"> -->
+        Enter ur name: <input type="text" name="tf1"><br><br>
+        <input type="button" name="b1" value="Write" onclick="write1()">
+        <input type="button" name="b2" value="Read Only" onclick="readonly()">
+    </form>
+</body>
+
+</html>

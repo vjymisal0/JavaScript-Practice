@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="textarea" ondblclick="myfun()">
+</body>
+<script>
+    function myfun() {
+        alert("this is ondbclick");
+    }
+    function init() {
+        // var str = "how are you?";
+        // var res = str.split();
+        // document.write("Result: " + res);
+        // var res1 = str.split('o');
+        // document.write("<br>Result 1: " + res1);
+        // var res2 = str.split(" ", 2);
+        // document.write("<br>Result 2: " + res2);
+        // let a = new Array();
+        // a.push(42, 13, 34, 5, 24);
+        // document.write("array: " + a + "<br>");
+        // document.write("For in loop:");
+        // for (elements in a) {
+        //     document.write(" " + a[elements]);
+        // }
+        // document.write("<br>Sorted: " + a.sort(function (a, b) {
+        //     // return b - a; //descending order
+        //     return a - b; //ascending order
+        // }));
+        // document.write("<br>Concat: " + a.concat(33, 33));
+        // document.write("<br>Join: " + a.join("-")); a.pop();
+        // document.write("<br>Pop: " + a);
+        // a.shift();
+        // document.write("<br>Shift: " + a);
+        // a.unshift(5);
+        // document.write("<br>Unshift: " + a);
+        // a.push(24);
+        // document.write("<br>Push: " + a);
+        let a1 = new String("hi bhosadike");
+        a1.toUpperCase();
+        document.write(a1);
+        document.write("<br>" + a1.substring(1, 5));
+        document.write("<br>" + a1.substr(3, 7));
+
+    }
+    init();
+</script>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        font-family: Mukta Vaani;
+    }
+</style>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" id="name" />
+        <input type="number" name="age" id="age" />
+        <input type="button" value="Submit" onclick="setCookie()" />
+    </form>
+</body>
+<script>
+    function setCookie() {
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        document.cookie = "name=" + name + ";age=" + age;
+        alert("Name: " + name + " Age " + age);
+    }
+</script>
+
+</html>

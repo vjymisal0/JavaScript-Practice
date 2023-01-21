@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Description</title>
+    <script>
+        function showCityDetails() {
+            // Get the selected city
+            var city = document.getElementById("citySelect").value;
+
+            // Get the city details
+            var cityDetails;
+            if (city == "NewDelhi") {
+                cityDetails = {
+                    description: "New Delhi is the capital city of India and is a melting pot of cultures and traditions. It is home to many historical monuments, government buildings, and embassies.",
+                    image: "newdelhi.jpg"
+                };
+            } else if (city == "Mumbai") {
+                cityDetails = {
+                    description: "Mumbai, also known as Bombay, is the financial capital of India and is known for its bustling streets, iconic landmarks, and delicious street food.",
+                    image: "mumbai.jpg"
+                };
+            } else if (city == "Bangalore") {
+                cityDetails = {
+                    description: "Bangalore, also known as Bengaluru, is the IT capital of India and is known for its beautiful gardens, parks and a pleasant climate. It is also known as the 'Silicon Valley of India'",
+                    image: "bangalore.jpg"
+                };
+            }
+
+            // Update the table with the city details
+            document.getElementById("cityDescription").innerHTML = cityDetails.description;
+            document.getElementById("cityImage").src = cityDetails.image;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>City Description</h1>
+    <select id="citySelect" onchange="showCityDetails()">
+        <option value="" disabled selected>Select a city</option>
+        <option value="NewDelhi">New Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+    </select>
+    <br><br>
+
+    Description:
+    <p id="cityDescription"></p>
+
+    Image:
+    <img id="cityImage" width="400" height="400"></td>
+
+</body>
+
+</html>

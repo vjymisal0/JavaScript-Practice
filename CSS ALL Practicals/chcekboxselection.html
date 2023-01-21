@@ -1,0 +1,24 @@
+<html>
+<form name="myform" action="" method="get">
+    <p><input type="checkbox" id="ch1" name="Cricket"> Cricket</p>
+    <p><input type="checkbox" id="ch2" name="Football"> Football</p>
+    <p><input type="submit" value="click" onclick="disp()"></p>
+</form>
+<script language="javascript">
+    function disp() {
+        if (myform.ch1.checked && myform.ch2.checked) {
+            alert(myform.ch1.name + " " + myform.ch2.name);
+        }
+        else if (myform.ch1.checked) {
+            alert(myform.ch1.name);
+        }
+        else if (myform.ch2.checked) {
+            alert(myform.ch2.name);
+        }
+        else {
+            alert("No checkbox is checked");
+        }
+    }
+</script>
+
+</html>

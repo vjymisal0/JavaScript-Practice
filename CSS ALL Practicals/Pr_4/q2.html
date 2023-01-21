@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title> Siddhesh Shelar</title>
+    <script>
+        function prime() {
+            var no = Number(prompt("Enter the number :: "));
+            var i;
+            for (i = 2; i <= no / 2; i++) {
+                if (no % i == 0) {
+                    break;
+                }
+            }
+            if (i > no / 2) {
+                document.write(no + " is prime number");
+            }
+            else {
+                document.write(no + " is not a prime number");
+            }
+        }
+    </script>
+</head>
+
+<body onload="prime()">
+</body>
+
+</html>

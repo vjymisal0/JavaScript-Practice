@@ -1,0 +1,42 @@
+<html>
+
+<body>
+    <script>
+        // function Submit() {
+        //     alert("Form Submitted");
+        // }
+        // function Reset() {
+        //     alert("Form Reset Successfully");
+        // }
+        function Add() {
+            let a = Number(document.getElementById("tf1").value) + Number(document.getElementById("tf2").value);
+            // document.forms.vijay.tf3.value = a;
+            document.getElementById("ans").value = a;
+        }
+        function Sub() {
+            let a = Number(document.getElementById("tf1").value) - Number(document.getElementById("tf2").value);
+            document.forms.vijay.tf3.value = a;
+        }
+        function Multiply() {
+            let a = Number(document.getElementById("tf1").value) * Number(document.getElementById("tf2").value);
+            document.forms.vijay.tf3.value = a;
+        }
+        function Divide() {
+            let a = Number(document.getElementById("tf1").value) / Number(document.getElementById("tf2").value);
+            document.forms.vijay.tf3.value = a;
+        }
+    </script>
+    <form name="vijay">
+        <!-- <input type="button" id="b1" value="Submit" onclick="Submit()">
+        <input type="button" id="b2" value="Reset" onclick="Reset()"> -->
+        <input type="number" id="tf1">
+        <input type="number" id="tf2">
+        <button type="button" onclick="Add()">Add</button>
+        <button type="button" onclick="Sub()">Sub</button>
+        <button type="button" onclick="Multiply()">Multiply</button>
+        <button type="button" onclick="Divide()">Divide</button>
+        <input type="text" name="tf3" id="ans">
+    </form>
+</body>
+
+</html>

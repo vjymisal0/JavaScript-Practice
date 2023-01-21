@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script language="Javascript">
+        MyBanners = new Array('Desert.jpg', 'D:\\Images\\Hydrangeas.jpg');
+        MyBannerLinks = new Array('http://www.vbtutor.net/', 'http://www.excelvbatutor.com/');
+        banner = 0; function ShowLinks() {
+            document.location.href = MyBannerLinks[banner];
+        }
+        function ShowBanners() {
+            if (document.images) {
+                banner++;
+                if (banner == MyBanners.length) {
+                    banner = 0;
+                }
+                document.ChangeBanner.src = MyBanners[banner];
+                setTimeout("ShowBanners()", 1000);
+            }
+        }
+    </script>
+
+<body onload="ShowBanners()">
+    <center>
+        <a href="javascript: ShowLinks()">
+            <img src="WhatsApp Image 2022-07-09 at 9.02.02 PM.jpeg" width="900" height="520" name="ChangeBanner" /></a>
+    </center>
+</body>
+
+</html>
+6.3. Slide Show:

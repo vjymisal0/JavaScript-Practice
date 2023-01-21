@@ -1,0 +1,28 @@
+<html lang="en">
+  <body>
+    <select
+      name="ArithmeticOperations"
+      id="ArithmeticThings"
+      onchange="myMenu()"
+    >
+      <option value="Add">Add</option>
+      <option value="Sub">Subtract</option>
+      <option value="Mul">Multiply</option>
+    </select>
+  </body>
+  <script>
+    function myMenu() {
+      let a = document.getElementById("ArithmeticThings");
+      let val = a.value;
+      let no1 = Number(prompt("Enter No1: "));
+      let no2 = Number(prompt("Enter No2: "));
+      if (val == "Add") {
+        alert("Addition of" + no1 + " & " + no2 + " is: " + (no1 + no2));
+      } else if (val == "Sub") {
+        alert("Subtraction of" + no1 + " & " + no2 + " is: " + (no1 - no2));
+      } else {
+        alert("Multiplication of " + no1 + " & " + no2 + " is: " + no1 * no2);
+      }
+    }
+  </script>
+</html>

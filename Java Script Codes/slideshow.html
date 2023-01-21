@@ -1,0 +1,19 @@
+<html lang="en">
+  <body onload="displaySlideShow()">
+    <img src="d.jpg" alt="" name="slide" width="400" height="400" />
+  </body>
+  <script>
+    let a = new Array("a.jpg", "b.jpg", "c.png");
+    let b = 0;
+    function displaySlideShow() {
+      if (document.images) {
+        b++;
+        if (b == a.length) {
+          b = 0;
+        }
+        document.slide.src = a[b];
+        setTimeout("displaySlideShow()", 2500);
+      }
+    }
+  </script>
+</html>

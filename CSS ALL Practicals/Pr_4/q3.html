@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <title>Siddhesh Shelar</title>
+  <script>
+    function pushpop() {
+      var name = ["Adam ", "John ", "Beck ", "Anamika ", "Zoe "];
+      alert("The stack objects are :: " + name);
+      //push()
+      name.push(prompt("Enter the name You want to add in the stack :: "));
+      //The original array
+      alert("The stack after adding the element is : " + name);
+      //pop()
+      alert("Press Ok to remove the last element from the stack..!");
+      name.pop();
+      //The array after removing the elements
+      alert("The stack after removing the element is : " + name);
+    }
+
+  </script>
+
+<body onload="pushpop()">
+</body>
+
+</html>

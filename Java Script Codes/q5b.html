@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookie Login</title>
+    <script>
+        function storeCookie(password) {
+            // Set the cookie with the name "password" and the value of the password input
+            document.cookie = "password=" + password;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cookie Login</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" onchange="storeCookie(this.value)"><br>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <section id="addition">
+        <button onclick="addition()">Addition</button>
+    </section>
+    <section id="subtraction">
+        <button onclick="subtraction()">Subtraction</button>
+    </section>
+    <section id="multiplication">
+        <button onclick="multiplication()">Multiplication</button>
+    </section>
+
+</body>
+<script>
+    let a = Number(prompt("Enter first number"));
+    let b = Number(prompt("Enter second number"));
+    function addition() {
+        let c = a + b;
+        alert("Addition of " + a + " and " + b + " is " + c);
+    }
+
+    function subtraction() {
+        let c = a - b;
+        alert("Subtraction of " + a + " and " + b + " is " + c);
+    }
+
+    function multiplication() {
+        let c = a * b;
+        alert("Multiplication of " + a + " and " + b + " is " + c);
+    }
+</script>
+<style>
+    body {
+        background-color: #f1f1f1;
+        display: flex;
+    }
+
+    section {
+        margin: 0 10px;
+    }
+</style>
+
+</html>

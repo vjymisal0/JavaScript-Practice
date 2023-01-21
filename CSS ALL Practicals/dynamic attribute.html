@@ -1,0 +1,29 @@
+<html>
+<select id="food1" name="food1" onchange="populate(this.id,'food2')">
+    <option value="">
+    <option value="Veg">Veg</option>
+    <option value="Fruit">Fruit</option>
+</select>
+</hr>
+<select id="food2" name="food2">
+</select>
+</hr>
+<script language="javascript">
+    function populate(f1, f2) {
+        var f1 = document.getElementById(f1);
+        var f2 = document.getElementById(f2);
+        f2.innerHTML = "";
+        if (f1.value == "Veg") {
+            var newOption = document.createElement("option");
+            newOption.innerHTML = "Spinach";
+            f2.options.add(newOption);
+        }
+        if (f1.value == "Fruit") {
+            var newOption = document.createElement("option");
+            newOption.innerHTML = "Mango";
+            f2.options.add(newOption);
+        }
+    }
+</script>
+
+</html>

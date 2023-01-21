@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Enter username: <input type="text" id="username">
+    <input type="button" value="create cookie" onclick="createCookie()"> -->
+    <script>
+        // function createCookie() {
+        //     let cookieValue = username.value;
+        //     document.cookie = "username=" + cookieValue;
+        //     alert("cookie is created");
+        // }
+        // var cookie_val = document.cookie;
+        // document.write("All Cookies: " + cookie_val);
+        let cookie_array = cookies.split(';');
+        for (i = 0; i < cookie_array.length; i++) {
+            var cookie_pair = cookie_array[i];
+            var name_val_arr = cookie_pair.split("=");
+            var name = name_val_arr[0];
+            var value = name_val_arr[1];
+            document.write("<br>Name: " + name + " value: " + value);
+        }
+    </script>
+</body>
+
+</html>

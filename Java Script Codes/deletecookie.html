@@ -1,0 +1,19 @@
+<html>
+
+    <body>
+        <input type="button" value="Delete Cookie1" onclick="delCookie1()">
+        <input type="button" value="Delete Cookie2" onclick="delCookie2()">
+        <script>
+
+        function delCookie1() {
+            document.cookie = "Name=Vijay Misal;expires=Thu, 01 Jan 1970 00:00:01 GMT";
+        }
+        
+        function delCookie2() {
+            document.cookie = "Name=Vijay Misal;max-age=0";
+            let a = document.cookie;
+        }
+    </script>
+    </body>
+
+</html>

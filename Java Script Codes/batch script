@@ -1,0 +1,90 @@
+#!/bin/sh
+
+# take two integers from the user
+echo "Choose the following: "
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "5. Modulus"
+read choice
+
+case $choice in
+[1-5])
+echo "You have chosen to add numbers: "
+echo "Enter two integers: "
+read a b
+
+# perform addition
+result=`expr $a + $b`
+
+# show result
+echo "Result: $result"
+
+
+
+
+#!/bin/sh
+  
+# take two numbers from the user
+echo "Enter two numbers: "
+read a b
+
+# perform addition
+result=`expr "$a + $b" | bc`
+
+# show result
+echo "Result: $result"
+
+
+#!/bin/sh
+
+# take two numbers from user
+echo "Enter two numbers: "
+read a b
+
+# compute subtraction result
+result=`expr "$a - $b" | bc`
+
+# print output
+echo "Result: $result"
+
+
+#!/bin/sh
+
+# take two numbers from user
+echo "Enter two numbers: "
+read a b
+
+# compute multiplication result
+result=`expr "$a * $b" | bc`
+
+# print output
+echo "Result: $result"
+
+
+
+#!/bin/sh
+
+# take two numbers from user
+echo "Enter two numbers: "
+read a b
+
+# compute division result
+result=`expr "$a / $b" | bc -l`
+
+# print output
+echo "Result: $result"
+
+
+#!/bin/sh
+
+# take two numbers from user
+echo "Enter two numbers: "
+read a b
+
+# compute modulus result
+result=`expr "$a % $b" | bc`
+
+# print output
+echo "Result: $result"

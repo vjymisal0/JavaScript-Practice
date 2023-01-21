@@ -1,0 +1,104 @@
+<html>
+  <style>
+    .tab {
+      display: none;
+    }
+
+    .tab-active {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="tab-menu">
+      <button class="btn-tab-addition" onclick="changeTab('tab-addition')">
+        Addition
+      </button>
+      <button
+        class="btn-tab-subtraction"
+        onclick="changeTab('tab-subtraction')"
+      >
+        Subtraction
+      </button>
+      <button
+        class="btn-tab-multiplication"
+        onclick="changeTab('tab-multiplication')"
+      >
+        Multiplication
+      </button>
+    </div>
+
+    <div class="tab tab-addition">
+      <form>
+        <label for="num-1">Number 1</label>
+        <input type="number" id="num-1" />
+        <br />
+        <label for="num-2">Number 2</label>
+        <input type="number" id="num-2" />
+        <br />
+        <button type="button" onclick="calculate(this, 'add')">Add</button>
+        <p></p>
+      </form>
+    </div>
+
+    <div class="tab tab-subtraction">
+      <form>
+        <label for="num-1">Number 1</label>
+        <input type="number" id="num-1" />
+        <br />
+        <label for="num-2">Number 2</label>
+        <input type="number" id="num-2" />
+        <br />
+        <button type="button" onclick="calculate(this, 'subtract')">
+          Subtract
+        </button>
+        <p></p>
+      </form>
+    </div>
+
+    <div class="tab tab-multiplication">
+      <form>
+        <label for="num-1">Number 1</label>
+        <input type="number" id="num-1" />
+        <br />
+        <label for="num-2">Number 2</label>
+        <input type="number" id="num-2" />
+        <br />
+        <button type="button" onclick="calculate(this, 'multiply')">
+          Multiply
+        </button>
+        <p></p>
+      </form>
+    </div>
+
+    <script>
+      function changeTab(tabClass) {
+        // hide all the tabs
+        Array.from(document.querySelectorAll(".tab")).forEach((tab) => {
+          tab.classList.remove("tab-active");
+        });
+
+        const tab = document.querySelector(`.${tabClass}`);
+        // show the selected tab
+        tab.classList.add("tab-active");
+      }
+
+      function calculate(button, operation) {
+        const form = button.parentElement;
+        const num1 = Number(form.querySelector("#num-1").value);
+        const num2 = Number(form.querySelector("#num-2").value);
+        const resultElement = form.querySelector("p");
+
+        let result;
+        if (operation === "add") {
+          result = num1 + num2;
+        } else if (operation === "subtract") {
+          result = num1 - num2;
+        } else if (operation === "multiply") {
+          result = num1 * num2;
+        }
+
+        resultElement.innerText = result;
+      }
+    </script>
+  </body>
+</html>

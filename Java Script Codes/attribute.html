@@ -1,0 +1,14 @@
+<html>
+<input type="button" value="Before Change" id="myBtn">
+<input type="button" value="Click" onclick="changeDynamically()">
+<script language="javascript">
+    function changeDynamically() {
+        // Selecting the element
+        var btn = document.getElementById("myBtn");
+        // Setting new attributes
+        btn.setAttribute("value", "After Change");
+        btn.setAttribute("disabled", "");
+    }
+</script>
+
+</html>

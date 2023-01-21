@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        function printIt() {
+            alert(document.getElementById('abcId').value);
+            // alert(document.formName.elements['abcName'].value);
+        }
+    </script>
+    <h1>Access Hidden value in JavaScript</h1>
+    <form name="formName">
+        <input type=hidden id="abcId" name="abcName" value="Gramin Polytechnic
+Nanded" />
+        <input type=button value="Get Value" onclick="printIt()" />
+    </form>
+</body>
+
+</html>
